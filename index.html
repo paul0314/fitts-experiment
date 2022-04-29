@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitts' Experiment</title>
+    <meta name="description" content="Educational tool for fitts law." />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="#" />
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="container">
+        <div class="open-dialog" id="dialog">
+            <div class="toolbar">
+                <label>Entfernung der Flächen (in px): </label><br>
+                <input type="number" id="fdistance" name="fdistance" value="450"><br><br>
+                <label>Breite der Flächen (in px): </label><br>
+                <input type="number" id="fwidth" name="fwidth" value="100"><br><br>
+                <label>Anzahl der Messwerte: </label><br>
+                <input type="number" id="fvalues" name="fvalues" value="10"><br><br>
+            </div>
+            <button type="button" class="startButton" id="startButton">Starte Experiment</button>
+        </div>
+        <div class="hide-fitts" id="fitts-experiment">
+            <div class="active" id="leftNode"></div>
+            <div class="inactive" id="rightNode"></div>
+        </div>
+        <div id="results">
+            
+        </div>
+    </div>
+
+    <script src="js/fitts.js"></script>
+</body>
+</html>

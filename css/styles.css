@@ -1,0 +1,51 @@
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#leftNode {
+    float: left;
+    width: var(--node-width);
+    height: 100%;
+}
+
+#rightNode {
+    float: right;
+    width:var(--node-width);
+    height: 100%;
+}
+
+#fitts-experiment {
+    height: var(--fitts-height);
+    width: var(--fitts-width);
+    overflow:hidden;
+    padding-top: 20px;
+}
+
+.container {
+    width: var(--display-width);
+    height: var(--display-height);
+    justify-content: center;
+    display: grid;
+}
+
+.active {
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.inactive {
+    background-color: grey;
+    border-radius: 5px;
+}
+
+:root {
+    --fitts-height: 500px;
+    --fitts-width: 500px;
+    --node-width: 100px;
+    --display-width: 100%;
+    --display-height: 100%;
+}
