@@ -228,7 +228,9 @@ class View {
     }
     
     reset() {
-        console.log("reset");
+        this.dialog.className = "hide";
+        this.fitts.className = "hide";
+        this.results.className = "hide";
         location.reload(true);
     }
     
@@ -245,7 +247,6 @@ class View {
     }
 
     displayResults(distance, width, times) {
-        let parView = this;
         this.dialog.className = "hide";
         this.fitts.className = "hide";
         this.results.className = "show";
